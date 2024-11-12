@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registre-se</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="h-screen w-screen bg-bg-register">
+  <header class="flex items-center justify-center flex-col gap-10 mt-6">
+    <img src="assets/logo-register.svg" alt="">
+    <h1 class="text-white font-extrabold text-2xl">Crie sua conta</h1>
+  </header>
+
+  <main class="flex items-center justify-center">
+    <form class="flex flex-col items-start mt-8">
+      <label for="email" class="font-normal text-sm mb-1 text-white">Endereço de email</label>
+      <input type="email" name="email" id="email" required class="w-96 bg-input-color rounded-md p-1 mb-5 border-none">
+
+      <label for="user" class="font-normal text-sm mb-1 text-white">Nome de usuário</label>
+      <input type="text" name="user" id="user" required class="w-96 bg-input-color rounded-md p-1 mb-5 border-none">
+
+      <label for="password" class="font-normal text-sm mb-1 text-white">Senha</label>
+      <input type="password" name="password" id="password" required class="w-96 bg-input-color rounded-md p-1 mb-5 border-none">
+
+      <button type="submit" class="bg-btn-register text-white tracking-wide font-black text-sm p-2 w-28 rounded-md mt-5 text-center">Registrar</button>
+    </form>
+  </main>
+</body>
+
+</html>
