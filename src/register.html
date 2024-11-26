@@ -20,7 +20,20 @@
     <img src="assets/logo-register.svg" alt="">
     <h1 class="text-white font-extrabold text-2xl">Crie sua conta</h1>
   </header>
-
+  <div class="hidden" id="before">
+    <div class="fixed top-0 left-0 z-[99] flex items-center justify-center">
+      <div
+        class="bg-bg-register p-6 rounded shadow-lg text-center w-screen h-screen flex items-center flex-col justify-center font-black text-2xl gap-5">
+        <img src="assets/logo-register.svg" alt="">
+        <p class="text-white">Você foi registrado com sucesso!</p>
+        <p class="text-white">Redirecionando para a tela de login...</p>
+        <!-- Barra de progresso -->
+        <div class="w-1/2 h-4 bg-bg-progress rounded-full overflow-hidden mt-4">
+          <div id="progress-bar" class="bg-progress h-full w-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <main class="flex items-center justify-center">
     <form class="flex flex-col items-start mt-8">
       <label for="email" class="font-normal text-sm mb-1 text-white">Endereço de email</label>
@@ -30,11 +43,15 @@
       <input type="text" name="user" id="user" required class="w-96 bg-input-color rounded-md p-1 mb-5 border-none">
 
       <label for="password" class="font-normal text-sm mb-1 text-white">Senha</label>
-      <input type="password" name="password" id="password" required class="w-96 bg-input-color rounded-md p-1 mb-5 border-none">
+      <input type="password" name="password" id="password" required
+        class="w-96 bg-input-color rounded-md p-1 mb-5 border-none">
 
-      <button type="submit" class="bg-btn-register text-white tracking-wide font-black text-sm p-2 w-28 rounded-md mt-5 text-center">Registrar</button>
+      <button type="submit"
+        class="bg-btn-register text-white tracking-wide font-black text-sm p-2 w-28 rounded-md mt-5 text-center">Registrar</button>
     </form>
   </main>
+
+  <script src="js/register.js"></script>
 </body>
 
 </html>

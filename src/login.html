@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre agora!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="w-screen h-screen bg-bg-login">
+  <header class="flex flex-col items-center justify-center gap-5 mt-20">
+    <img src="assets/logo-register.svg" alt="">
+    <h1 class="font-black text-white text-2xl">Entre agora!</h1>
+  </header>
+  <div class="hidden" id="before">
+    <div class="fixed top-0 left-0 z-[99] flex items-center justify-center">
+      <div
+        class="bg-bg-login p-6 rounded shadow-lg text-center w-screen h-screen flex items-center flex-col justify-center font-black text-2xl gap-5">
+        <img src="assets/logo-register.svg" alt="">
+        <p class="text-white">Login realizado!</p>
+        <p class="text-white">Redirecionando para o mundo de séries e desenhos!</p>
+        <!-- Barra de progresso -->
+        <div class="w-1/2 h-4 bg-bg-progress rounded-full overflow-hidden mt-4">
+          <div id="progress-bar" class="bg-progress h-full w-0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="flex items-center justify-center mt-10">
+    <form class="flex flex-col items-start mt-8">
+      <label for="user" class="font-normal text-sm mb-1 text-white">Usuário</label>
+      <input type="text" name="user" id="user" class="w-80 bg-input-login rounded-xl p-2 mb-8 border-none">
+
+      <label for="senha" class="font-normal text-sm mb-1 text-white">Senha</label>
+      <input type="password" name="senha" id="senha" class="w-80 bg-input-login rounded-xl p-2 mb-5 border-none">
+
+      <div class="flex flex-col items-center justify-center gap-12">
+        <h3 class="font-extralight text-white italic">Não tem uma conta? <span class="font-extrabold text-register underline"><a href="register.html" target="_blank">Registre-se</a></span></h3>
+
+        <button type="submit" class="bg-btn-register w-80 p-2 text-white rounded-xl border-none font-black tracking-wider">Entrar</button>
+      </div>
+    </form>
+  </main>
+  
+  <script src="js/login.js"></script>
+</body>
+
+</html>
