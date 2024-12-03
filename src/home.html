@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineYoung</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-bg-home w-screen h-screen">
+  <header class="flex items-center justify-around text-nav-home p-4 h-24">
+    <img src="assets/logo-register.svg" alt="" class="">
+    <nav class="flex items-center justify-center uppercase font-semibold">
+      <ul class="flex items-center justify-center gap-12">
+        <li><a href="login.html" id="btn-login">Entrar</a></li>
+        <div class="hidden" id="before-login">
+          <div class="fixed top-0 left-0 z-[99] flex items-center justify-center">
+            <div
+              class="bg-bg-login p-6 rounded shadow-lg text-center w-screen h-screen flex items-center flex-col justify-center font-black text-2xl gap-5">
+              <img src="assets/logo-register.svg" alt="">
+              <p class="text-white normal-case">Estamos te levando para entrar no seu perfil</p>
+              <p class="text-white normal-case">Redirecionando para a tela de login...</p>
+              <!-- Barra de progresso -->
+              <div class="w-1/2 h-4 bg-bg-progress rounded-full overflow-hidden mt-4">
+                <div id="progress-bar" class="bg-progress h-full w-0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <li><a href="register.html" class="btn-register">Criar uma conta</a></li>
+        <div class="hidden" id="before-register">
+          <div class="fixed top-0 left-0 z-[99] flex items-center justify-center">
+            <div
+              class="bg-bg-login p-6 rounded shadow-lg text-center w-screen h-screen flex items-center flex-col justify-center font-black text-2xl gap-5">
+              <img src="assets/logo-register.svg" alt="">
+              <p class="text-white normal-case">Te levando para se registrar.</p>
+              <p class="text-white normal-case">Redirecionando para a tela de registro...</p>
+              <!-- Barra de progresso -->
+              <div class="w-1/2 h-4 bg-bg-progress rounded-full overflow-hidden mt-4">
+                <div id="progress-bar-register" class="bg-progress h-full w-0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <li><a href="">Séries</a></li>
+        <li><a href="">Desenhos</a></li>
+      </ul>
+    </nav>
+    <div class="relative">
+      <input type="text" id="search" class="w-56 bg-input-home rounded-xl border-none">
+      <i
+        class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 transform -translate-y-1/2 text-nav-home text-base"></i>
+    </div>
+  </header>
+
+  <main class="flex justify-center items-center mt-48 h-2/3">
+    <div class="flex justify-center flex-col items-center">
+      <div class="h-96 flex flex-col items-center gap-3">
+        <p class="text-white font-black text-center text-3xl leading-relaxed">
+          Acompanhe as séries e desenhos que você assistiu.<br />
+          Salve aqueles que você quer ver.<br />
+          Conte aos seus amigos o que é bom.
+        </p>
+        <button class="bg-btn-home w-80 text-white rounded-sm p-3 mt-10 font-bold text-base btn-register">Comece agora mesmo - é grátis!</button>
+        <p class="text-nav-home font-light text-base">A rede social para os amantes de séries e desenhos.</p>
+      </div>
+
+      <div class="flex gap-8 mt-10">
+        <img src="assets/bb-img.png" alt="">
+        <img src="assets/pb-img.png" alt="">
+        <img src="assets/himym-img.png" alt="">
+        <img src="assets/naruto-img.png" alt="">
+        <img src="assets/bob-img.png" alt="">
+        <img src="assets/st-img.png" alt="">
+      </div>
+    </div>
+  </main>
+
+  <script src="js/progress-home.js"></script>
+</body>
+
+</html>

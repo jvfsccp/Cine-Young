@@ -11,7 +11,11 @@ module.exports = {
       'input-login': '#ACABAB',
       'register': '#D136E9',
       'bg-progress': '#e5e7eb',
-      'progress': '#3b82f6'
+      'progress': '#3b82f6',
+      'bg-home': '#18181b',
+      'nav-home': 'rgb(255, 255, 255, 0.8)',
+      'input-home': 'rgb(255,255, 255, 0.24)',
+      'btn-home': '#00AC1C'
       
     },
     fontFamily:{
